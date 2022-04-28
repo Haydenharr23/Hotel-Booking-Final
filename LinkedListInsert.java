@@ -4,6 +4,7 @@
  * CIS152
  * Apr 20, 2022
  */
+//this class is a linked list and doubles as my insertion sort
 public class LinkedListInsert
 {
     node head;

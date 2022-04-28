@@ -17,12 +17,14 @@ public class Hotel {
 	    LinkedList<Room> rooms;
 	    double rating;
 	    
+	    //making an object that sorts my linked list of hotels
 	   public static LinkedListInsert sortRatings = new LinkedListInsert();
 	    
 	    public Hotel() {
 	    	
 	    }
 	    
+	    //hotel constructor
 	    public Hotel(String hn, double r, int hID) {
 	    	
 	    	
@@ -30,6 +32,7 @@ public class Hotel {
 	    	rating = r;
 	    	hotelID = hID;
 	    	
+	    	//pushing hotels into method to then sort
 	    	sortRatings.push(rating, hotelID, hotelName);
 	    	
 	    }
@@ -40,6 +43,7 @@ public class Hotel {
 	    
 	   
 	    public LinkedListInsert getList() {
+	    	//initiates sorting + returns list after sorted
 	    	sortRatings.insertionSort(sortRatings.head);
 			return sortRatings;
 	    	

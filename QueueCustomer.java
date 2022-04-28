@@ -7,6 +7,7 @@ import java.util.Queue;
  * CIS152
  * Apr 26, 2022
  */
+//using java's default library "interface" for a queue based on a linked list
 public class QueueCustomer {
 	Queue<String> q = new LinkedList<>();
 	String hasHotel;
@@ -20,7 +21,7 @@ public class QueueCustomer {
 	 	 hasRoom = c.getRoom();
 	 	 hasDate = c.getDate();
 	 	 
-	 	
+	 	//using customer information and adding it to queue
 	 	q.add(hasName + " is staying in " + hasHotel + " on " + hasDate); 
 	 	 
 	}

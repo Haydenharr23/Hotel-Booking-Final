@@ -1,4 +1,4 @@
-import java.sql.Date;
+
 import java.time.LocalDate;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -24,6 +24,7 @@ public class Room extends Hotel{
 		{
 			super();
 		}
+		//constructor for room
 		public Room(String hn, String type, int roomID, int hotelID) {
 			super();
 			hotelName=hn;
@@ -42,6 +43,7 @@ public class Room extends Hotel{
 		public Boolean Availability() {
 			return bookingStatus;
 		}
+		//method for booking customers to a room  based on the time
 		public void Booking(LocalDate from, LocalDate to){
 			this.stay=from;
 			this.leave=to;

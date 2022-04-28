@@ -17,7 +17,7 @@ public class Customer extends Room {
 	LocalDate to;
 	
 
-	
+	//customer constructor
 	public Customer(String n, LocalDate f, LocalDate to, Room r) {
 		super();
 		
@@ -29,6 +29,7 @@ public class Customer extends Room {
 		
 	}
 	
+	//methods to get attributes.
 	public String getName() {
 		return name;
 	}
@@ -43,8 +44,9 @@ public class Customer extends Room {
 		return from;
 	}
 	
+	//this method displays information regarding the customers stay in a hotel
 	public String displayCus() {
-		//System.out.println(name + " is staying in " + hotelName + " Hotel in room " + roomNum + " on " + from);
+		
 		return name + " is staying in " + hotelName + " Hotel in room " + roomNum + " on " + from;
 	}
 	

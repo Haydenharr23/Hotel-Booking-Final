@@ -18,13 +18,14 @@ public class Driver {
 	
 	public static void main(String[] args) {
 		
+		//making multiple hotels to be displayed and stored
 		Hotel a = new Hotel("Hilton", 4.3,1);
 		Hotel b = new Hotel("Ramada",3.8,2);	
 		Hotel c = new Hotel("Hampton Inn",4.5,3);	
 		Hotel d = new Hotel("Des Lux Hotel",4.6,4);
 		Hotel e = new Hotel("Sheraton",4.1,5);
 		
-		
+		//making rooms to go in hotel
 		Room One = new Room("Hilton", "Single", 1, 1);
 		Room Two = new Room("Hilton", "Double", 2, 1);
 		Room Three = new Room("Hilton", "Triple", 3, 1);
@@ -50,13 +51,16 @@ public class Driver {
 		Room TwelveC = new Room("Sheraton", "Triple", 3, 5);
 		Room TwelveD = new Room("Sheraton", "Quad", 4, 5);
 		
+		
+		
 		LocalDate holdDate = LocalDate.parse("2022-05-12");
 		LocalDate holdDate2 = LocalDate.parse("2022-05-13");
 		
 		QueueCustomer x = new QueueCustomer();
 		
+		//creating a sample customer to display later
 		Customer takeRoom = new Customer("Roger", holdDate, holdDate2, TwelveB);
-	//	x.addCustomer(takeRoom);
+
 		
 	
 		
@@ -67,7 +71,7 @@ public class Driver {
 			
 		x.addCustomer(takeRoom);
 			
-		
+		//getting information from user
 		System.out.println("Please enter first name");
 		String fn = in.next();
 
@@ -94,12 +98,14 @@ public class Driver {
 		System.out.println("Enter Date of day you expect to leave. (yyyy-mm-dd)");
 		String leave = in.next();
 		
+		//turning date strings into LocalDate to be used in objects
 		LocalDate bookStay = LocalDate.parse(stay);
 		LocalDate bookLeave = LocalDate.parse(leave);
 		
 	
 		
-		
+		//switch statements book and create customers depending on what they selected
+		//then customers get added to queue
 		switch (selectHotel) {
 		
 		case 1:
@@ -326,7 +332,7 @@ public class Driver {
 		System.out.println("-------------");
 		
 		System.out.println("Displaying results..");
-		
+		//display queued customers
 		x.displayQueue();
 		
 		
