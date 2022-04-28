@@ -86,11 +86,12 @@ public class LinkedListInsert
     /* Function to print linked list */
     void printlist(node head)
     {
+    	int count = 1;
         while (head != null)
         {
-            System.out.print(head.name + " --- Rating:" + head.val + " \n");
+            System.out.print(count + "- " + head.name + " --- Rating:" + head.val + " \n");
             head = head.next;
-            
+            count++;
             
         }
     }

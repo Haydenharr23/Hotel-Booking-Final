@@ -61,7 +61,7 @@ public class Driver {
 		//creating a sample customer to display later
 		Customer takeRoom = new Customer("Roger", holdDate, holdDate2, TwelveB);
 
-		
+		x.addCustomer(takeRoom);
 	
 		
 		
@@ -69,7 +69,7 @@ public class Driver {
 		int beans = 1;
 		while(beans != 0) {
 			
-		x.addCustomer(takeRoom);
+		
 			
 		//getting information from user
 		System.out.println("Please enter first name");
