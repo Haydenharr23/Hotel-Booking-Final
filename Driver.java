@@ -61,7 +61,7 @@ public class Driver {
 		//creating a sample customer to display later
 		Customer takeRoom = new Customer("Roger", holdDate, holdDate2, TwelveB);
 
-		x.addCustomer(takeRoom);
+		x.addCustomer(takeRoom);S
 	
 		
 		
