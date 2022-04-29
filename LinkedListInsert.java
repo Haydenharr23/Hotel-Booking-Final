@@ -14,7 +14,7 @@ public class LinkedListInsert
     {
         double val;
         int ID;
-        String name;
+       public String name;
         node next;
  
         public node(double val, int ID, String name)
@@ -83,13 +83,21 @@ public class LinkedListInsert
         }
     }
  
+    double getRating() {
+    	return  head.val;
+    }
+    String getHotelName() {
+    	return sorted.name;
+    }
     /* Function to print linked list */
     void printlist(node head)
     {
     	int count = 1;
         while (head != null)
         {
+        	
             System.out.print(count + "- " + head.name + " --- Rating:" + head.val + " \n");
+            
             head = head.next;
             count++;
             

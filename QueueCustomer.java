@@ -26,10 +26,10 @@ public class QueueCustomer {
 	 	 
 	}
 	
-	public void displayQueue() {
+	public Queue<String> displayQueue() {
 			
 		
-			System.out.println(q);
+			return q;
 				
 		
 	}

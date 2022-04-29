@@ -13,7 +13,16 @@ import java.util.Scanner;
  */
 public class Driver {
 	 
-
+	public void printHotels() {
+		Hotel a = new Hotel("Hilton", 4.3,1);
+		Hotel b = new Hotel("Ramada",3.8,2);	
+		Hotel c = new Hotel("Hampton Inn",4.5,3);	
+		Hotel d = new Hotel("Des Lux Hotel",4.6,4);
+		Hotel e = new Hotel("Sheraton",4.1,5);
+		
+		LinkedListInsert list = d.getList();
+		list.printlist(list.head);
+	}
 	
 	
 	public static void main(String[] args) {
@@ -61,7 +70,7 @@ public class Driver {
 		//creating a sample customer to display later
 		Customer takeRoom = new Customer("Roger", holdDate, holdDate2, TwelveB);
 
-		x.addCustomer(takeRoom);S
+		x.addCustomer(takeRoom);
 	
 		
 		
@@ -333,8 +342,8 @@ public class Driver {
 		
 		System.out.println("Displaying results..");
 		//display queued customers
-		x.displayQueue();
 		
+		System.out.println(x.displayQueue());
 		
 		}
 		
